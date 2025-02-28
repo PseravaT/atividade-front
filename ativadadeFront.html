@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(70, 69, 69);
+            color: aliceblue;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .caixa{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid black;
+        box-shadow: 2px 2px 5px black;
+        overflow-y: auto;
+        max-width: 700px;
+        max-height: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgb(36, 35, 35);
+        }
+
+        title{
+            color: white;
+            display: block;
+            font-size: 45px;
+        }
+
+        h2{
+            color: rgb(255, 255, 255);
+            display: block;
+            font-size: 25px;
+            background-color: rgb(109, 165, 6);
+            border-radius: 10px;
+            padding: 10px;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        ul,p{
+            font-size: 18px;
+        }
+
+        table{
+            align-items: center;
+            width: auto;
+            margin:  0px ;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+            background-color: rgb(109, 165, 6);
+            width:max-content;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 4px auto; 
+            gap: 20px; 
+            text-decoration: none;
+            border-radius: 15px;
+            text-shadow: 1px 1px 2px black;
+            
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+            color: black;
+            cursor: pointer;
+        }
+
+        .links a:active {
+            text-decoration: underline;
+            color: black;
+            cursor: pointer;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(109, 165, 6);
+            width:max-content;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 4px auto; 
+            gap: 20px; 
+            text-decoration: none;
+            border-radius: 15px;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        form input{
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            width: 100px;
+        }
+
+        form button{
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            width: 100px;
+            background-color: rgb(84, 126, 6);
+            border: 1px solid #ccc;
+            text-shadow: 1px 1px 2px rgb(22, 22, 22);
+            cursor: pointer;
+            font-weight: bold;
+            color: white;
+        }
+
+        form button:hover{
+            background-color: rgb(49, 75, 2);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <title>Atividade Front:</title>
+    </header>
+<div class="caixa">
+    <container >
+        <h2> 1. Cite 3 tags fundamentais do Html:</h2>
+        <ul>
+            <li> Head </li>
+            <li> Body </li>
+            <li> html </li>
+        </ul>
+
+        <h2> 2. Quais tipos de lista existem no html?</h2>
+        <ul>
+            <li> Ordenada </li>
+            <li> Não Ordenada </li>
+        </ul>
+
+        <h2> 3. html é uma linguagem de programação? Explique.</h2>
+        <p>Não, por que é uma linguagem de marcacao, dessa forma se caracteriza de uma liguagem com intuito de definir a aparencia e configurações de textos e dados.</p>
+
+        <h2>4. Foi solicitado que você altere o título da página. Qual tag devemos utilizar dentro do head?</h2>
+
+        <p>title</p>
+
+        <h2>5. crie uma tabela com 3 colunas: Nome; Telefone; Email. Adicione mais 1 linha com dados: joão, 82 0000-0000, joao@email.com</h2>
+
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>82 0000-0000</td>
+                <td>joao@email.com</td>
+            </tr>
+        </table>
+
+        <h2>6. cite 2 tipos (imput type="") adicionados no HTML 5.</h2>
+
+        <p>text e password</p>
+
+        <h2>7. Quais principais diferenças podemos apontar entre Html 4 e Html 5?</h2>
+
+        <p> remoção e adicição de tags alem de simplificar a sintaxe e inclusao de novos recursos </p>
+
+        <h2>8. qual a utilidade do DOCTYPE</h2>
+
+        <p>determinar o tipo de documento</p>
+
+        <h2>9. Os cabeçalhos podem ir de h1 até h quanto? qual a diferenças entre eles?</h2>
+
+        <p>de 1 a 6, h1 eh o mais importante e h6 eh o menos importante, também tem mudança no tamanho na forte.</p>
+
+        <h2>10. conteudos como p, img dever ser inseridos no head ou no body? explique.</h2>
+
+        <p>p e img devem ser inseridos no body pois eles modificam a aparencia da pagina e nao o seu conteudo que seria inserido no head</p>
+
+        <h2>11. podemos enviar 2 tipos de metodos (verbos HTTP) no form (form method="?"). cite os 2 tipos e explique as diferenças</h2>
+
+        <ul>
+            <li>get</li>
+                <ul>
+                    <li> é o padrao para enviar dados, podem ser visiveis na url</li>
+                </ul>
+            <li>post</li>
+                <ul>
+                    <li> nao podem ser visiveis na url</li>
+                    <li>pode enviar informçãoes maiores </li>
+                </ul>
+        </ul>
+
+        <h2>12. cria uma lista ordenada onda cada item deve ser um link (a) para: Google, Faceboook e youtube. deve abrir uma novapagina ao clicar.</h2>
+
+        <ol >
+            <li class="links"><a href="https://www.google.com.br/" target="_blank">Google</a></li>
+            <li class="links"><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li class="links"><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+        </ol>
+
+        <h2> crie um formulario para autenticação onde: o usuario deverá informar o e-mail e senha . deve constar um botao de entrar.</h2>
+
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha">
+            <button type="submit">Entrar</button>
+        </form>
+    </container>
+</div>
+    
+</body>
+</html>
